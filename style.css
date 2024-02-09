@@ -1,0 +1,26 @@
+.BingoTitle {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Circles{
+    height: 400px;
+    width: 400px;
+    border-radius: 5000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.Circle1 {
+    background-color: palevioletred;
+}
+
+.MiniCircle {
+    height: 200px;
+    width: 200px;
+    border-radius: 5000px;
+    background-color: white;
+}
