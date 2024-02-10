@@ -5,35 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bingo</title>
     <link rel = "stylesheet" href = "style2.css" />
-    <link rel = "functions" href = "index.js" />
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <div class="wrapper">
-        <button class="left"> < </button>
-        <ul class = "carousel">
-            <li class="card" id="player1">
-                <h2 style="color: white;">1</h2>
-                <div class = "bingo-card"> </div>
-            </li>
+<body style="background: linear-gradient(to left top, #020202, #202020);">
 
-            <li class="card" id="player2">
-                <h2>2</h2>
-                <div class = "bingo-card"> </div>
-            </li>
+    <div class="back">
+        <div class="Head">
+            <div class = "Rounds">
+                <div class = "Border">
+                    <div class = "Container">
+                        <div class = "Text"><p>Rondas</p></div>
+                        <img alt="Arrow" src="./images/NeonArrow.png">
+                        <h2 class = "Quantity" style="font-size: 25px;">0</h2>
+                    </div>
+                </div>
+            </div>
 
-            <li class="card" id="player3">
-                <h2>3</h2>
-                <div class = "bingo-card"> </div>
-            </li>
+            <div class = "Turn">
 
-            <li class="card" id="player4">
-                <h2>4</h2>
-                <div class = "bingo-card"> </div>
-            </li>
+                <div class="Visuals">
+                    <div class="img" id="Bombo"> <img src="./images/BomboBingo.png" alt="BomboBingo"></div>
+
+                    <div class = "Circle">
+                        <div class = "MiniCircle"> <h3 class="Counter">1</h3> </div>
+                    </div>
+                </div>
+
+                <button class="Generate" onclick="increment()"> Siguiente Turno </button>  
+            </div>
+        </div>
+
+        <div class="Space"></div>
+
+        <div class="wrapper">
+            <button class="left"> < </button>
+            <ul class = "carousel">
+                <li class="card" id="one">
+                    <h2 id="player1name" style="color: rgb(243, 146, 146); text-shadow: 1px 1px 3px rgb(235, 232, 232);">1</h2>
+                    <div class = "bingo-card"> </div>
+                </li>
+
+                <li class="card">
+                    <h2 id="player2name" style="color: rgb(214, 56, 235); text-shadow: 1px 1px 3px rgb(235, 232, 232);">2</h2>
+                    <div class = "bingo-card"> </div>
+                </li>
+
+                <li class="card">
+                    <h2 id="player3name" style="color: rgb(62, 209, 62); text-shadow: 1px 1px 3px rgb(235, 232, 232);">3</h2>
+                    <div class = "bingo-card"> </div>
+                </li>
+
+                <li class="card">
+                    <h2 id="player4name" style="color: rgb(83, 155, 238); text-shadow: 1px 1px 3px rgb(235, 232, 232);">4</h2>
+                    <div class = "bingo-card"> </div>
+                </li>
 
 
-        </ul>
-        <button class="right"> > </button>
+            </ul>
+            <button class="right"> > </button>
+        </div>
+    </div>
+
+    <div class="popup">
+        <button class="close-btn">&times;</button>
+        <h1 style="color: white;">Numero</h1>
+        <div class="show">
+            <p style="font-size: 30px;">✨</p>
+            <h3 class="Counter" style="color: white; align-self: center;">1</h3>
+            <p style="font-size: 30px;">✨</p>
+        </div>
     </div>
 </body>
 </html>

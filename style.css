@@ -3,6 +3,7 @@
    font-family: 'Poppins',serif;
 }
 
+/*Title*/
 .BingoTitle {
     display: flex;
     justify-content: center;
@@ -61,6 +62,7 @@
 
 
 
+/*Cards*/
 .InitialInformation{
     position: relative;
     display: flex;
@@ -85,7 +87,7 @@
 }
 
 .Points:hover, .Information:hover{
-    height: 580px;
+    height: 600px;
 }
 
 .InitialInformation .image{
@@ -106,6 +108,7 @@
     scale: 0.8;
 }
 
+/*Form Start*/
 .InitialInformation .image img{
     position: absolute;
     width: 100%;
@@ -139,6 +142,7 @@ form{
     padding-right: 40px;
     gap: 3vw;
     row-gap: 3vh;
+    width: 100%;
 }
 
 .input-box input{
@@ -171,7 +175,7 @@ select option{
 }
 
 .start{
-    width: 100%;
+    width: 80%;
     background-color:rgb(125, 184, 240) ;
     border:none;
     outline: none;

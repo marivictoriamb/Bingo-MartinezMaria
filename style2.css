@@ -1,32 +1,217 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 * {
    font-family: 'Poppins',serif;
-   box-sizing: border-box;
 }
 
-body{
+/*Banner Quantity*/
+
+.Head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Border{
+    background-color: rgb(255, 221, 67); 
+    border: 15px white dotted;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Container{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.Container img{
+    object-fit: cover;
+    width: 20vw;
+}
+
+.Text p{
+    text-shadow:
+    0 0 4px #ffd700, 
+    0 0 8px #ffd700,
+    0 0 12px #ffd700,
+    0 0 20px #ffa500, 
+    0 0 30px #ffa500,
+    0 0 40px #ffa500,
+    0 0 50px #f3e352, 
+    0 0 60px #f3ea65,
+    0 0 70px #ffec82;
+    color: #fff;
+    font-size: 200%;
+}
+
+
+/*Turn*/
+.Turn{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.Visuals{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 8vw;
+}
+
+.Circle{
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 2px  rgb(248, 219, 233);
+    border: 3px rgb(228, 220, 220) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(240, 232, 125);
+}
+
+.MiniCircle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.Visuals img{
+    align-self: center;
+    object-fit: cover;
+    width: 150px;
+    animation: movement 2s ease-in-out;
+}
+
+@keyframes movement {
+    5% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateY(5px); }
+}
+
+
+.Generate{
+    width: 100%;
+    align-self: center;
+    background-color:rgb(238, 240, 125) ;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    border: 2px solid rgb(248, 232, 4);
+    padding: 15px;
+    margin: 15px;
+    font-weight: 600;
+    color: rgb(44, 43, 43);
+    font-size: 15px;
+    box-shadow: 0px 0px 20px 1px  rgb(248, 219, 233);
+    cursor: pointer;
+}
+
+
+.Space{
+    box-shadow: 0px 0px 10px 6px  white;
+    margin: 0px 50px;
+    margin-top: 40px;
+}
+
+.back{
+    transition: filter 0ms ease-in-out 300ms;
+}
+
+.popup{
+    position: absolute;
+    top: -120%;
+    left: 35%;
+    transform: translate(-50px, -50px);
+    background-color: rgb(17, 17, 17);
+    border-radius: 40px;
+    width: 40vw;
+    padding: 20px;
+    transition: top 0ms ease-in-out 300ms, opacity 300ms ease-in-out, margin-top 300ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+
+    height: 300px;   
+}
+
+.show{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 5vw;
+}
+
+
+.popup .close-btn{
+    align-self: flex-end;
+    margin-right: 20px;
+    background: #eee;
+    color: #111;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+body.active-popup .back{
+    filter:blur(30px);
+    background: rgba(0,0,0,0.08);
+    transition: filter 0ms ease-in-out 0ms;
+}
+
+body.active-popup .popup{
+    top: 50%;
+    opacity: 1;
+    margin-top: 0px;
+    transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out, margin-top 300ms ease-in-out;
+}
+
+
+
+/*Carousel*/
+.wrapper{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to left top, #020202, #202020);
-}
-.wrapper{
-    width: 100%;
-    position: relative;
 }
 
 .wrapper .carousel {
     margin: 30px;
+    padding-inline-start: 0px;
     display: grid;
-    grid-auto-flow: column;    
-    grid-auto-columns: calc((100%));
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
     overflow: hidden;
+    gap: 0px;
 }
   
 .carousel .card{
     list-style: none;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 50vw;
+    margin: auto;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -36,10 +221,16 @@ body{
   
 .card .bingo-card{
     width: 90%;
-    height: 90%;
+    height: 80%;
     object-fit: cover;
-    background-color: wheat;
+    background-color: rgb(112, 111, 107);
     border-radius: 10%;
+    box-shadow:  1px 1px 7px 1px white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vh;
 }
 
 .wrapper button{
@@ -48,7 +239,6 @@ body{
     outline: none;
     border-radius: 50%;
     box-shadow: 0px 0px 30px 0px rgba(207, 207, 207, 0.2);
-    padding: 5px;
     font-weight: 600;
     color: rgb(34, 33, 33);
     font-size: medium;
@@ -57,8 +247,6 @@ body{
 
     width: 30px;
     height: 30px;
-    top: 50%;
-    transform: translateY(-50%);
     cursor: pointer;
 
 }
@@ -69,4 +257,21 @@ body{
 
 .wrapper .left{
     left: 20px;
+}
+
+.bingo-card .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bingo-card .value{
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(53, 51, 51);
+    border-radius: 10%;
+    color: white;   
+    text-align: center;
+    text-justify: auto;
+    font-size: 3vw;
 }
