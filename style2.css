@@ -3,6 +3,27 @@
    font-family: 'Poppins',serif;
 }
 
+.goBack {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    font-size: 4vh;
+    object-fit: cover;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-shadow:
+    0 0 4px #ffd700, 
+    0 0 8px #ffd700,
+    0 0 12px #ffd700,
+    0 0 20px #ffa500, 
+    0 0 30px #ffa500,
+    0 0 40px #ffa500,
+    0 0 50px #f3e352, 
+    0 0 60px #f3ea65,
+    0 0 70px #ffec82;
+
+}
+
 /*Banner Quantity*/
 
 .Head{
@@ -10,6 +31,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 1.5vh;
 }
 .Border{
     background-color: rgb(255, 221, 67); 
@@ -217,6 +239,14 @@ body.active-popup .popup{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px;
 }
   
 .card .bingo-card{

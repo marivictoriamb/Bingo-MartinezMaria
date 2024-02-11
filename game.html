@@ -7,9 +7,11 @@
     <link rel = "stylesheet" href = "style2.css" />
     <script src="script.js" defer></script>
 </head>
-<body style="background: linear-gradient(to left top, #020202, #202020);">
+<body style="background: linear-gradient(to left top, #020202, #202020); height: 1280px;">
 
     <div class="back">
+        <a class="goBack" href="./index.html" rel = "nofollow noopener noreferrer"> < </a>
+
         <div class="Head">
             <div class = "Rounds">
                 <div class = "Border">
@@ -41,23 +43,35 @@
             <button class="left"> < </button>
             <ul class = "carousel">
                 <li class="card" id="one">
-                    <h2 id="player1name" style="color: rgb(243, 146, 146); text-shadow: 1px 1px 3px rgb(235, 232, 232);">1</h2>
-                    <div class = "bingo-card"> </div>
+                    <div class="player">
+                        <h2 id="player1name" style="color: rgb(243, 146, 146); text-shadow: 1px 1px 3px rgb(235, 232, 232);">&nbsp - &nbsp Puntos:&nbsp</h2>
+                        <h2 id="player1Points" style="color: rgb(243, 146, 146); text-shadow: 1px 1px 3px rgb(235, 232, 232);"> 0</h2>
+                    </div>
+                    <div class = "bingo-card" id="pointsPlayer1"> </div>
                 </li>
 
                 <li class="card">
-                    <h2 id="player2name" style="color: rgb(214, 56, 235); text-shadow: 1px 1px 3px rgb(235, 232, 232);">2</h2>
-                    <div class = "bingo-card"> </div>
+                    <div class="player">
+                        <h2 id="player2name" style="color: rgb(214, 56, 235); text-shadow: 1px 1px 3px rgb(235, 232, 232);">&nbsp - &nbsp Puntos:&nbsp</h2>
+                        <h2 id="player2Points" style="color: rgb(214, 56, 235); text-shadow: 1px 1px 3px rgb(235, 232, 232);">0</h2>
+                    </div>
+                    <div class = "bingo-card" id="pointsPlayer2" > </div>
                 </li>
 
                 <li class="card">
-                    <h2 id="player3name" style="color: rgb(62, 209, 62); text-shadow: 1px 1px 3px rgb(235, 232, 232);">3</h2>
-                    <div class = "bingo-card"> </div>
+                    <div class="player">
+                        <h2 id="player3name" style="color: rgb(62, 209, 62); text-shadow: 1px 1px 3px rgb(235, 232, 232);">&nbsp - &nbsp Puntos:&nbsp</h2>
+                        <h2 id="player3Points" style="color: rgb(62, 209, 62); text-shadow: 1px 1px 3px rgb(235, 232, 232);">0</h2>
+                    </div>
+                    <div class = "bingo-card" id="pointsPlayer3" > </div>
                 </li>
 
                 <li class="card">
-                    <h2 id="player4name" style="color: rgb(83, 155, 238); text-shadow: 1px 1px 3px rgb(235, 232, 232);">4</h2>
-                    <div class = "bingo-card"> </div>
+                    <div class="player">
+                        <h2 id="player4name" style="color: rgb(83, 155, 238); text-shadow: 1px 1px 3px rgb(235, 232, 232);">&nbsp - &nbsp Puntos:&nbsp</h2>
+                        <h2 id="player4Points" style="color: rgb(83, 155, 238); text-shadow: 1px 1px 3px rgb(235, 232, 232);">0</h2>
+                    </div>
+                    <div class = "bingo-card" id="pointsPlayer4"> </div>
                 </li>
 
 
