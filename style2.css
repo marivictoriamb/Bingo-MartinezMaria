@@ -231,7 +231,7 @@ body.active-popup .popup{
   
 .carousel .card{
     list-style: none;
-    height: 500px;
+    height: 600px;
     width: 50vw;
     margin: auto;
     border-radius: 8px;
@@ -247,15 +247,16 @@ body.active-popup .popup{
     align-items: center;
     flex-wrap: wrap;
     gap: 0px;
+    margin-bottom: 4vw;
 }
   
 .card .bingo-card{
     width: 90%;
-    height: 80%;
+    height: 60%;
     object-fit: cover;
-    background-color: rgb(112, 111, 107);
+    background-color: rgb(39, 39, 39);
     border-radius: 10%;
-    box-shadow:  1px 1px 7px 1px white;
+    box-shadow:  1px 1px 10px 1px white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -296,12 +297,12 @@ body.active-popup .popup{
 }
 
 .bingo-card .value{
-    width: 5vw;
-    height: 5vw;
-    background-color: rgb(53, 51, 51);
+    width: 4vw;
+    height: 4vw;
+    background-color: rgb(56, 55, 55);
     border-radius: 10%;
     color: white;   
     text-align: center;
     text-justify: auto;
-    font-size: 3vw;
+    font-size: 2vw;
 }
