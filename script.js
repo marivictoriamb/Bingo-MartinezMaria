@@ -173,7 +173,7 @@ function color(number){
     check(card4, points4) ;
 
     if (end){
-        const url = new URL("./points.html", window.location.origin);
+        const url = new URL("https://marivictoriamb.github.io/Bingo-MartinezMaria/points.html", window.location.origin);
         url.searchParams.set("name1", name1);
         url.searchParams.set("name2", name2);
         url.searchParams.set("name3", name3);

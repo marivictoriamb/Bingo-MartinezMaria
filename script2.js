@@ -108,7 +108,7 @@ function gameOver(){
 }
 
 document.querySelector(".goBack").addEventListener("click", function(){
-    const url = new URL("./index.html", window.location.origin);
+    const url = new URL("https://marivictoriamb.github.io/Bingo-MartinezMaria/index.html", window.location.origin);
     url.searchParams.set("localStorage", localStorage);
 
     window.location.href = url.toString();;
