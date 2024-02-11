@@ -218,29 +218,29 @@ function check(card, points){
 
         let values = row.querySelectorAll(".value");
         values.forEach(value => {
-            if (getComputedStyle(value).backgroundColor == 'rgb(53, 51, 51)' & checkHorizontal){
+            if (getComputedStyle(value).backgroundColor == 'rgb(56, 55, 55)' & checkHorizontal){
                 checkHorizontal = false;
             } 
 
-            if (getComputedStyle(value).backgroundColor == 'rgb(53, 51, 51)' & checkBoard){
+            if (getComputedStyle(value).backgroundColor == 'rgb(56, 55, 55)' & checkBoard){
                 checkBoard = false;
             } 
 
-            if (getComputedStyle(value).backgroundColor == 'rgb(53, 51, 51)' & i==1){
+            if (getComputedStyle(value).backgroundColor == 'rgb(56, 55, 55)' & i==1){
                 checkVertical[0] = false;
-            } else if (getComputedStyle(value).backgroundColor == 'rgb(53, 51, 51)' & i==2){
+            } else if (getComputedStyle(value).backgroundColor == 'rgb(56, 55, 55)' & i==2){
                 checkVertical[1] = false;
-            } else if (getComputedStyle(value).backgroundColor == 'rgb(53, 51, 51)' & i==3){
+            } else if (getComputedStyle(value).backgroundColor == 'rgb(56, 55, 55)' & i==3){
                 checkVertical[2] = false;
-            } else if (getComputedStyle(value).backgroundColor == 'rgb(53, 51, 51)' & i==4){
+            } else if (getComputedStyle(value).backgroundColor == 'rgb(56, 55, 55)' & i==4){
                 checkVertical[3] = false;
-            } else if (getComputedStyle(value).backgroundColor == 'rgb(53, 51, 51)' & i==5){
+            } else if (getComputedStyle(value).backgroundColor == 'rgb(56, 55, 55)' & i==5){
                 checkVertical[4] = false;
             }
 
             i++;
 
-            if (getComputedStyle(value).backgroundColor == 'rgb(53, 51, 51)'){
+            if (getComputedStyle(value).backgroundColor == 'rgb(56, 55, 55)'){
                 let position = value.id;
                 checkDiagonal[findNumberPosition(diagonal, position)] = false
             }

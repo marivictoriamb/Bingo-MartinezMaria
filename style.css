@@ -120,7 +120,6 @@
 .InitialInformation .content{
     position: absolute;
     width: 100%;
-    text-align: center;
     top: 55%;
     height: 55%;
     overflow: hidden;
